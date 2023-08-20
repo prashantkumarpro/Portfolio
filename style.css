@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    /* 1 rem = 16px
+    16px = 100%
+    10px = 65.2% */
+
+    font-size: 62.5%;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    background-color: rgb(136, 130, 130);
+   
+    /* width: 240px; */
+    font-family: 'EB Garamond', serif;
+    color: white;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 6rem;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 24px;
+    padding: 35px 5px;
+    /* padding-top: 24px;
+    padding-bottom: 13px; */
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.main {
+margin-left: 30px;
+    /* background-color: rgb(221, 190, 51); */
+    width: 88vw;
+}
+
+.info {
+    background-color: rgb(31, 75, 114);
+    height: 58vh;
+    width: 80vw;
+    margin: 103px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Playfair Display', serif;
+}
+
+.devPic img {
+    width: 181px;
+    height: 249px;
+   
+
+}
+
+.hello {
+    font-size: 50px;
+
+}
+
+.name {
+    font-size: 30px;
+    font-family: 'EB Garamond', serif;
+    font-family: bold;
+}
+
+.about {
+    font-size: 20px;
+}
+
+.moreabout {
+    font-size: 16px;
+}
+
+.buttons {
+    margin-top: 14px;
+}
+
+.buttons button a {
+    text-decoration: none;
+    color: white;
+}
+
+.buttons button {
+    padding: 9px 14px;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 22px;
+    margin: 0 3px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    border: none;
+
+}
+
+.buttons button:hover {
+    background-color: rgb(37, 129, 221);
+    color: white;
+}
+
+.hamebruger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    background-color: transparent;
+}
+
+
+
+.hame {
+    position: absolute;
+    margin: -11px -6px;
+}
+
+.cross {
+    /* width: 100px; */
+    margin-left: 195px;
+   
+}
+
+.gosidebar {
+    transform: translate(-256px, 0px);
+    position: absolute;
+}
+
+
+@media (max-width:998px) {
+    html {
+        font-size: 55%;
+    }
+
+    .devPic img {
+        display: none;
+
+    }
+
+    .cross {
+        margin-left: 180px;
+    }
+
+}
+
+@media (max-width:768px) {
+    html {
+        font-size: 50%;
+    }
+
+    .cross {
+        margin-left: 170px;
+    }
+}
+
+@media (max-width:468px) {
+    html {
+        font-size: 50%;
+    }
+
+    @media (max-width:768px) {
+        html {
+            font-size: 50%;
+        }
+
+        .cross {
+            margin-left: 170px;
+        }
+
+        .main {
+            position: absolute;
+        }
+    }
+}
+
+.myIntro {
+    margin-top: 56px;
+    /* padding: 2px; */
+    margin-left: 14px;
+}
+
+.myIntro h1,
+h2 {
+    font-family: 'EB Garamond', serif;
+    margin: 12px;
+}
+
+.myIntro p {
+    font-family: monospace;
+    margin: 12px;
+    font-size: 18px;
+}
